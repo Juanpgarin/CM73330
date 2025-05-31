@@ -1,0 +1,23 @@
+ELEMENTOS DE LINEA:
+
+Los elementos en línea (inline) no inician una nueva línea y solo ocupan el espacio 
+necesario para el contenido. Se utilizan principalmente para estilizar partes 
+específicas del contenido dentro de un bloque.
+
+<a>      Representa un hipervinculo
+<span>   Un contenedor génerico para estilizar partes del texto
+<strong> Texto de importancia fuerte mostrado en negrita
+<em>     Texto de importancia mostrado en cursiva
+<img>    Es una imagen
+<br>     Inserta un salto de línea
+
+
+
+EJEMPLO:
+
+<body>
+<p>Este es un párrafo con un <a href="#">enlace</a> y algo de <strong>texto en negrita</strong>.</p>
+<p>Otro párrafo con una <em>énfasis</em> en una palabra.</p>
+<p>Imagen en línea: <img src="imagen.jpg" alt="Descripción de la imagen"></p>
+</body>
+

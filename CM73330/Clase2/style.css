@@ -1,0 +1,29 @@
+#titulo {
+    color:darkblue
+}
+#titulo:hover {
+    text-align: center;
+    color: black;
+
+}
+
+.texto{
+    color:white;
+    background-color: black;
+}
+
+button {
+    background-color: aqua;
+    /*width: 65px;*/ /*para agrandar de ancho*/
+    padding: 15px;   /*para agrandar de alto*/
+    margin: 15px;    /*para separarlos*/ 
+
+}
+button:hover{/*hover es para que se modifique cuando se pasa por encima*/
+    background-color: blueviolet;
+    scale: 1.5; /*para que se agrande cuando pase por encima*/
+}
+
+.conteiner{
+    background-color: aquamarine;
+}

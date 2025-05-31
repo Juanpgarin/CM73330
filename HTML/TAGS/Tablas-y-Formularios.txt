@@ -1,0 +1,62 @@
+Las listas y tablas sirven para organizarse o armar emails
+
+<table>       <!-- Contenedores de la tabla-->
+   <tr>       <!-- Renglón de la tabla - Define una fila-->
+    <th></th> <!-- Encabezados-->
+    <td></td> <!-- Celdas -->
+   </tr>      <!-- Cierra las filas -->   
+</table>      <!-- Cierra los contenedores -->
+
+EJEMPLO:
+
+<table>       
+    <tr>
+        <th>Nombre</th>
+        <th>Ciudad</th>
+        <th>Edad</th>    
+    </tr>    
+    <tr>       
+       <td>Juan</td> 
+       <td>CABA</td> 
+       <td>36</td> 
+    </tr>         
+ </table>      
+
+
+                                         FORMULARIOS
+
+  <form action="/submit"  method="post">      <!-- Etiqueta contenedora -->
+     <label for="Tiene que coincidir con id">Nombre:</label>
+     <input type="text" name="X" id="Tiene que coincidir con el for(label)">
+
+     <label for="password">Contraseña:</label>
+     <input type="password" name="password" id="password">
+
+     <label for="mensaje">Mensaje:</label>
+     <textarea name="mensaje" id="mensaje"></textarea>
+
+     <label for="genero">Género:</label>
+     <input type="radio" name="" id="mensaje">
+     <label for="">Hombre</label>
+
+     <input type="radio" name="" id="mensaje">
+     <label for="">Mujer</label>
+
+     <input type="radio" name="" id="mensaje">
+     <label for="">Prefiero no decirlo</label>
+
+     <label for="suscribe">Suscribirse</label>
+     <input type="checkbox" name="Suscribirse" id="suscribe">
+     
+     <label for="pais">País:</label>
+     <select  name="" id="">
+       <option value="">Argentina</option>
+       <option value="">Brasil</option>
+       <option value="">México</option>
+       <option value="">Jamaica</option>
+     </select>
+
+     <input type="submit" value="ENVIAR">
+     
+
+  </form>   

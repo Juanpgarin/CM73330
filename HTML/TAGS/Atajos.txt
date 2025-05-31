@@ -1,0 +1,5 @@
+Shift + alt + a =  <!-- COMENTARIOS -->
+Tag*número      =  Multiplica ej: p*3=   <p></p>
+                                         <p></p>
+                                         <p></p>
+                                         

@@ -1,0 +1,19 @@
+.tiTulo{
+    background-color: black;
+    color: brown;
+}
+
+.subTitulo{
+    background-color: aqua;
+    color: blue;
+}
+
+.image{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.conteiner{
+    
+}

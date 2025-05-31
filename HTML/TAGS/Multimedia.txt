@@ -1,0 +1,13 @@
+
+VIDEO:
+
+ <video src="" controls>Video 1</video>
+
+ Siempre recordar agregar controls, sino no aparecera en la pagina.
+
+ AUDIO:
+
+  <audio src="" controls>Audio 1</audio>
+
+
+  

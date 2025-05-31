@@ -1,0 +1,155 @@
+/* justify-items
+La propiedad justify-items alinea los elementos hijos dentro de sus celdas a lo largo del eje horizontal 
+(izquierda a derecha). Los valores posibles son:
+
+start (inicio)
+
+end (fin)
+
+center (centro)
+
+stretch (ocupa todo el ancho disponible) */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+
+/* Visualización Actualizada
+Cada ítem está centrado horizontalmente en su celda:
+
+|   Ítem   |   Ítem   |   Ítem   | */
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/* align-items
+La propiedad align-items alinea los elementos hijos dentro de sus celdas a lo largo del eje vertical (arriba a abajo).
+ Los valores posibles son:
+
+start (arriba)
+
+end (abajo)
+
+center (centro)
+
+stretch (ocupa toda la altura disponible) */
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    align-items: end;
+}
+
+/* Visualización Actualizada
+Cada ítem está alineado al fondo de su celda:
+
+-------------
+      Ítem
+-------------
+      Ítem
+-------------
+      Ítem
+------------- */
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/* justify-content
+La propiedad justify-content alinea y distribuye las columnas de la grilla a lo largo del eje horizontal del contenedor. Los valores posibles son:
+
+start (inicio)
+
+end (fin)
+
+center (centro)
+
+space-between (espacio entre columnas)
+
+space-around (espacio alrededor de columnas)
+
+space-evenly (espacios iguales entre y alrededor de columnas) */
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+}
+
+/* Visualización Actualizada
+Las columnas están distribuidas con espacio entre ellas:
+
+|Ítem|     |Ítem|     |Ítem| */
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/* align-content
+La propiedad align-content alinea y distribuye las filas de la grilla a lo largo del eje vertical del contenedor. Solo tiene efecto cuando el contenedor de la grilla tiene un espacio mayor al necesario para las filas. Los valores posibles son:
+
+start (arriba)
+
+end (abajo)
+
+center (centro)
+
+space-between (espacio entre filas)
+
+space-around (espacio alrededor de filas)
+
+space-evenly (espacios iguales entre y alrededor de filas) */
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    align-content: space-evenly;
+}
+
+/* Visualización Actualizada
+Las filas están distribuidas con espacios iguales entre y alrededor:
+
+Fila 1
+(space)
+Fila 2
+(space)
+Fila 3 */
+
+
+/* Ejemplo de Código
+
+ */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    justify-items: center;
+    align-items: start;
+    justify-content: space-around;
+    align-content: space-between;
+}
+/* Visualización Actualizada
+El resultado es una grilla organizada de la siguiente forma:
+
+   Columna 1      Columna 2      Columna 3
+-------------------------------------------
+   Ítem            Ítem            Ítem
+-------------------------------------------
+                 (space)
+   Ítem            Ítem            Ítem
+-------------------------------------------
+En este ejemplo:
+
+justify-items: center alinea los ítems horizontalmente al centro de sus celdas.
+
+align-items: start alinea los ítems verticalmente al inicio de sus celdas.
+
+justify-content: space-around distribuye las columnas con espacio alrededor.
+
+align-content: space-between distribuye las filas con espacio entre ellas.
+
+Las propiedades clave de CSS Grid como justify-items, align-items, justify-content y align-content 
+permiten alinear y distribuir elementos dentro de la grilla, creando diseños flexibles y precisos. 
+Por ejemplo, con justify-items, los elementos se alinean horizontalmente dentro de sus celdas: 
+configurarlo en center centra cada ítem, mientras que stretch hace que ocupen todo el ancho disponible. 
+Por otro lado, align-items ajusta la alineación vertical, permitiendo posicionar elementos en la parte superior (start), 
+inferior (end) o extenderlos verticalmente (stretch) dentro de las celdas.
+
+Propiedades como justify-content y align-content controlan la distribución de filas y columnas dentro del contenedor. 
+Por ejemplo, usar justify-content: space-between crea espacios uniformes entre columnas, mientras que align-content: 
+space-evenly distribuye filas con igual espacio entre y alrededor de ellas. Visualizar estos efectos en el navegador,
+ como observar cómo se expanden o reposicionan los elementos, refuerza el aprendizaje al conectar la teoría con resultados
+  prácticos, haciendo que los conceptos sean intuitivos y aplicables a proyectos reales. */

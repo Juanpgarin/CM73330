@@ -1,0 +1,66 @@
+ESTRUCTURA DE HTML
+
+<html>    Es la raiz del documento
+<head>    Contiene metadatos sobre el document, como el titulo o enlaces a hojas de estilo
+<title>   Define el titulo del documento que se muestra en la pestaña del navegador
+<body>    Contiene todo el contenido visible de la pagina web
+<header>  Define un encabezado para el documento o sección
+<nav>     Contiene los enlaces de navegación
+<main>    Representa el contenido principal del documento 
+<section> Define una sección del documento
+<article> Representa contenido autónomo 
+<footer>  Define un pie de pagina para el documento
+
+EJEMPLO:
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de autos</title>
+</head>
+
+<body>
+    <header>
+        <h1> Venta de autos</h1>
+    </header>    
+    <main> 
+        <section>
+            <h2>Auto 1</h2>
+            <p>Toyota Corolla 2020 - $20.000</p>
+        </section>
+        <section>
+            <h2>Auto 2</h2>
+            <p>Honda Civic 2019 - $18000</p>
+        </section>
+    </main>    
+    <footer>
+        <p>Contacto: info@ventadeautos.com.ar</p>
+    </footer>   
+</body>
+</html>
+
+Convenciones de Nombrado de Clases e IDs
+
+Descriptivos: Usa nombres que describan claramente el propósito del elemento.
+
+Estilo CamelCase o Guiones: Sigue un estilo consistente, como nombreDeClase o nombre-de-clase.
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página de Ejemplo</title>
+</head>
+<body>
+<header id="header-principal">
+<h1 class="titulo-principal">Bienvenido a Mi Sitio Web</h1>
+</header>
+<section id="contenido-principal">
+<h2 class="subtitulo">Introducción</h2>
+<p>Este es un párrafo de introducción.</p>
+</section>
+</body>
+</html>

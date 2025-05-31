@@ -1,0 +1,229 @@
+*{  padding: 0;
+    margin:  0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-image: url(Pic/fondos/fondoweb.png);
+}
+.logo{
+    text-align: center;
+}
+.nav-menu li{
+    margin-right: 1.5rem;  
+}
+.menubox{
+    background-color: black;
+    width: 80%;
+    height: 50px;
+    padding-left: 33%;
+    align-items: center;
+    text-align: center;
+    line-height: 50px;
+}
+
+a, li{
+    font-family: "Cinzel"; 
+    font-weight: 700;
+    font-size: 20px;
+    color:antiquewhite;
+    text-decoration: none;
+}
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    background-color: grey;
+    text-align: left; 
+    }
+
+p{  color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align:left;
+    padding-left: 10%;
+    margin-top: 5%;
+}
+
+.tituloindex{
+    font-family: "Arial, Helvetica, sans-serif";
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+}
+/* -----------------------------------------------------------GALERIA----------------------------------------------------------- */
+.containergallery{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 15px;
+    justify-content: center;
+    align-items: start;
+    height: 300px;
+    padding: 10px;    
+}
+
+.novedades{
+    display: flex;
+    background:darkgrey;
+    color: antiquewhite;
+    padding: 1rem;
+}
+.novedades2{
+    display: flex;
+    width: 100%;
+    background:darkgrey;
+    color: antiquewhite;
+    padding: 1rem;
+    gap:1rem;
+    overflow: hidden;
+}
+.prelatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    flex: 1;
+}
+.p2{
+    font-size: xx-large;
+    text-align: left;
+    text-decoration: underline;
+    font-family: "Cinzel";
+    font-weight: 700;
+}
+.p3{
+    font-size: x-large;
+    text-align: left;
+    margin-left: auto;
+
+}
+
+.leermas{
+    background-color: black;
+    color:grey;
+    width: 100px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: "Cinzel";
+    width: 150px;
+    cursor: pointer;  
+    margin-left: auto;    
+}
+.leermas:hover{
+    background-color: black;
+    color:red;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: "Cinzel";
+    cursor: pointer;    
+    scale: 1.5px;
+}
+
+.tituloh2g{
+    color: antiquewhite;
+    font-family: "Cinzel"; 
+    font-size: 50px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.imagen{
+    height:auto;
+    width: 300px;
+    border-radius: 20px;    
+}
+.imagen2{
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;         
+}
+.contacto{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    padding: 20px;  
+}
+.formulario{
+        width: 100%;
+        max-width: 500px;  
+        padding: 20px;
+        border-radius: 8px;
+        font-family: "Cinzel";
+}
+.labelform { 
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.labelform input,
+.labelform textarea {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.big-button{
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-family: "Cinzel";
+    font-size: larger;
+    color: blanchedalmond;
+    background-color: rgb(43, 41, 41);
+    cursor:pointer;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.big-button:hover{
+    background-color: black;
+    color: red;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    color: antiquewhite;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: 2px solid #333;
+    
+}
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.icon {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+}
+.email {
+    font-size: 16px;
+    color: antiquewhite;
+    font-family: "Cinzel";
+}
+.footer-right { 
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+ 
+}
+.banner{
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.imagencc{
+    height:auto;
+    width: 300px;
+    border-radius: 20px;    
+}

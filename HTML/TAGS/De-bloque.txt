@@ -1,0 +1,36 @@
+ELEMENTOS DE BLOQUE DE HTML:
+
+Los elementos de bloque ocupan todo el ancho disponible de su contenedor y siempre comienzan 
+en una nueva línea.
+Estos elementos se utilizan para estructurar y dividir el contenido en secciones lógicas.
+
+<p>          Representa un párrafo de texto
+<h1> a <h6>  Son los diferentes niveles de los encabezados
+<div>        Un contenedor génerico para agrupar otros ELEMENTOS
+<section> Define una sección del documento
+<article> Representa contenido autónomo 
+<footer>  Define un pie de pagina para el documento
+
+JERARQUÍA DE ENCABEZADOS:
+
+<body>
+<h1>Título Principal</h1>
+<h2>Subtítulo de la Sección</h2>
+<p>Contenido de la sección...</p>
+<h3>Subsección</h3>
+<p>Contenido de la subsección...</p>
+<h2>Otro Subtítulo de Sección</h2>
+<p>Más contenido...</p>
+</body>
+
+
+extra:
+
+Target blank
+Hace que se abra una nueva pestaña o ventana cuando se clickea en el.
+
+EJEMPLO:
+
+ <footer>
+        <p>Contacto: <a href="info@ventadeautos.com.ar" target-"_blank"</a></p>
+    </footer>   

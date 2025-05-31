@@ -1,0 +1,176 @@
+.container{
+    display: grid; /* Definir Grid */
+    /* grid-template-columns: 1f 1fr 1fr; Unidad de medida de las columnas */
+    grid-template-columns: repeat(3, 1fr); /* Modo abreviado para no escribir tantas veces lo mismo */
+    /* grid-template-columns: 100px 100px 100px;/* Definir columnas */ 
+    grid-template-rows: 100px 200px; /* Definir alto de lineas */
+ }
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+/* grid-template-columns
+La propiedad grid-template-columns define la estructura de las columnas en la grilla. 
+Puedes especificar el tamaño de cada columna usando unidades como px, %, fr, entre otras. */
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+/* grid-template-rows
+La propiedad grid-template-rows define la estructura de las filas en la grilla, 
+similar a cómo grid-template-columns define las columnas. */
+
+.container {
+    display: grid;
+    grid-template-rows: 100px 200px;
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+/* grid-template-areas
+La propiedad grid-template-areas permite nombrar áreas dentro de la grilla para facilitar el posicionamiento de los elementos hijos.
+Se usan nombres de áreas definidos en los elementos hijos. */
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar main";
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.main {
+    grid-area: main;
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+/* column-gap
+La propiedad column-gap (anteriormente grid-column-gap) define el espacio entre las columnas de la grilla. */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+
+/* Ejemplo Visual
+| Columna 1 | | Columna 2 | | Columna 3 |
+
+|-------------| 20px |-------------| 20px |-------------| */
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+/* 
+row-gap
+La propiedad row-gap (anteriormente grid-row-gap) define el espacio entre las filas de la grilla. */
+
+.container {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    row-gap: 20px;
+}
+
+/* Ejemplo Visual
+| Fila 1 (100px) |
+
+| | 20px |
+
+| Fila 2 (100px) | */
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+/* Ejemplo Completo */
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px 200px;
+    grid-template-areas:
+        "header header header"
+        "sidebar main .";
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.main {
+    grid-area: main;
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+/* 
+grid-column
+La propiedad grid-column se utiliza para definir en qué columna comienza un ítem y cuántas columnas ocupa. 
+Esta propiedad combina grid-column-start y grid-column-end.
+ */
+
+ .item {
+    grid-column: 2 / 4;
+}
+
+/* En este ejemplo, el ítem comienza en la columna 2 y termina en la columna 4, ocupando dos columnas. */
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+/* grid-row
+La propiedad grid-row se utiliza para definir en qué fila comienza un ítem y cuántas filas ocupa. Esta propiedad combina
+grid-row-start y grid-row-end. */
+
+.item {
+    grid-row: 1 / 3;
+}
+
+/* En este ejemplo, el ítem comienza en la fila 1 y termina en la fila 3, ocupando dos filas. */
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+/* grid-area
+La propiedad grid-area es una forma abreviada de definir grid-row-start, grid-column-start, grid-row-end y grid-column-end 
+en una sola propiedad. */
+
+.item {
+    grid-area: 1 / 2 / 3 / 4;
+}
+
+/* En este ejemplo, el ítem comienza en la fila 1, columna 2, y termina en la fila 3, columna 4. */
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+}
+
+.item1 {
+    grid-column: 1 / 3;
+}
+
+.item2 {
+    grid-row: 2 / 4;
+}
+
+.item3 {
+    grid-area: 1 / 3 / 3 / 5;
+}
+
+/* En este ejemplo:
+
+Item 1 ocupa las columnas 1 y 2 de la primera fila.
+
+Item 2 ocupa las filas 2 y 3 de la segunda columna.
+
+Item 3 ocupa desde la fila 1, columna 3 hasta la fila 2, columna 4.
+
+Estos conceptos y ejemplos proporcionan una base sólida para comenzar a trabajar con CSS Grid y flexibilizar ítems individuales dentro de una grilla. */
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+.item {
+    grid-area: 1 / 2 / 3 / 4;
+}

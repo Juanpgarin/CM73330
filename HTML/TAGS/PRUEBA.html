@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Tu Nombre">
+  <meta name="description" content="Página de ejemplo HTML bien estructurada sin CSS ni JavaScript.">
+  <title>Mi Página HTML Completa</title>
+</head>
+<body>
+
+  <!-- ENCABEZADO PRINCIPAL -->
+  <header id="encabezado">
+    <h1>Bienvenido a Mi Página Web</h1>
+    <p>Una estructura HTML completa, sin estilos ni scripts.</p>
+  </header>
+
+  <!-- BARRA DE NAVEGACIÓN -->
+  <nav id="navegacion-principal">
+    <ul>
+      <li><a href="#seccion-sobre-mi">Sobre mí</a></li>
+      <li><a href="#seccion-articulos">Artículos</a></li>
+      <li><a href="#seccion-contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main id="contenido-principal">
+
+    <!-- SECCIÓN SOBRE MÍ -->
+    <section id="seccion-sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>Soy un desarrollador web en formación, apasionado por el código limpio y la estructura semántica.</p>
+      <figure>
+        <img src="perfil.jpg" alt="Foto de perfil" width="200">
+        <figcaption>Mi foto de perfil.</figcaption>
+      </figure>
+    </section>
+
+    <!-- SECCIÓN DE ARTÍCULOS -->
+    <section id="seccion-articulos">
+      <h2>Artículos Recientes</h2>
+
+      <article id="articulo-html">
+        <h3>Introducción al HTML</h3>
+        <p>HTML es el lenguaje de marcado que usamos para estructurar el contenido en la web.</p>
+        <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">Leer más en MDN</a>
+      </article>
+
+      <article id="articulo-semantica">
+        <h3>Importancia de la Semántica</h3>
+        <p>Usar etiquetas semánticas mejora la accesibilidad y el SEO de una página.</p>
+        <a href="https://www.w3.org/TR/html52/semantics.html" target="_blank">Documentación oficial W3C</a>
+      </article>
+    </section>
+
+    <!-- BARRA LATERAL -->
+    <aside id="barra-lateral">
+      <h2>Noticias Rápidas</h2>
+      <ul>
+        <li>HTML6 en desarrollo</li>
+        <li>Nuevas prácticas de accesibilidad</li>
+        <li>Tips para escribir mejor código</li>
+      </ul>
+    </aside>
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <section id="seccion-contacto">
+      <h2>Contacto</h2>
+      <form action="/enviar" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer id="pie-pagina">
+    <p>&copy; 2025 - Todos los derechos reservados. Diseñado por Tu Nombre.</p>
+    <p><a href="#encabezado">Volver al inicio</a></p>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
+

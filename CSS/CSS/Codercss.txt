@@ -1,0 +1,50 @@
+VINCULACIÓN EXTERNA:
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+La vinculación externa consiste en enlazar un archivo CSS separado al documento HTML mediante la etiqueta <link> dentro del <head>.
+
+VINCULACIÓN INTERNA:
+
+<head>
+<style>
+body {
+background-color: lightblue;
+}
+h1 {
+color: navy;
+margin-left: 20px;
+}
+</style>
+</head>
+
+La inserción interna coloca el CSS directamente dentro del documento HTML utilizando la etiqueta <style> dentro del <head>.
+
+ESTILOS EN LINEA:
+
+<body>
+<h1 style="color: navy; margin-left: 20px;">Título</h1>
+<p style="color: green;">Este es un párrafo.</p>
+</body>
+
+Los estilos en línea se aplican directamente a los elementos HTML mediante el atributo style.
+
+
+
+Comparación de Métodos
+Vinculación Externa
+Pros: Reutilización, mantenimiento sencillo, separación de contenido.
+
+Contras: Requiere solicitudes HTTP adicionales.
+
+Inserción Interna
+Pros: Menos solicitudes HTTP, conveniente para estilos específicos de una página.
+
+Contras: No reutilizable, difícil de mantener en grandes cantidades.
+
+Estilos en Línea
+Pros: Aplicación rápida y específica, no requiere <head>.
+
+Contras: No reutilizable, difícil de mantener, alta especificidad.

@@ -1,0 +1,25 @@
+/*selector + propiedad + valor*/
+
+/*selector {
+    propiedad:valor
+}*/
+
+/* p{
+   /* color: blue ;*/
+   
+
+
+/*  ATAJOS:
+
+ Ej para multiplicar:
+
+ div.grid-container>div*6.grid-item
+
+ *N multiplica por la cantidad del número que le pongamos
+
+ .grid-container (clase padre) 
+ .grid-item      (clase de cada hijo-item) */
+
+
+ /* ALT+SHIFT+a
+ Seleccionando el texto lo añade como comentario */

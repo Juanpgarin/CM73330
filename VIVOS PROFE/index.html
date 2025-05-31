@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"> Academia Criolla Devcitos</div> 
+            <ul class="nav-link"> <!-- Enlaces al menú-->
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Contactos</a></li>                
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-grid"> <!-- Contenido principal grid -->
+        <section class="hero"> <!-- sección principal -->
+            <div class="hero-text">
+                <h2>Aprende a programar sin vueltas</h2>
+                <p>Desde cero hasta profesional, 100% online y practico. Con ejemplos de la vida cotidiana</p>
+                <label for="modal-toggle" class="btn">Ver cursos</label>               
+            </div>
+            <div class="hero-image">
+                <img src="./fondociudad.png" alt="Ciudad con logo de umbra">
+            </div>
+
+            <section class="beneficios">
+                <h2>Porque elegirnos?</h2>
+                <div class="beneficios-grid">
+                    <div class="beneficio">Clases en vivo</div>
+                    <div class="beneficio">Material descargable</div>
+                    <div class="beneficio">Comunidad activa</div>
+                    <div class="beneficio">Proyectos reales</div>
+                </div>
+            </section>
+        </section>
+        <!-- formulario de Contacto -->
+        <section class="contacto">
+            <h2>Queres que te avisemos de nuevos cursos?</h2>
+            <form class="formulario">
+                <input type="text" placeholder="Nombre completo">
+                <input type="email" placeholder="Correo electrónico">
+                <textarea rows="4" placeholder="Contanos que te gustaría aprender"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+
+    </main>
+    <!-- modal con lista de los cursos -->
+     <div class="modal">
+        <div class="modal-content">
+            <h3>Cursos disponibles</h3>
+            <ul> <!-- lista de cursos -->
+                <li>Introducción a HTML y CSS</li>
+                <li>Javascript desde cero</li>
+                <li>React para principiantes</li>
+                <li>Desarrollo mobile con react native</li>
+                <li>Backend con Node.js y Express</li>
+            </ul>
+            <label for="modal-toggle" class="btn cerrar">Cerrar</label>
+        </div>
+     </div>
+
+
+    <footer>
+        @ 2025 Academiadevcitos - TODOS LOS DERECHOS RESERVADOS
+    </footer>
+    
+</body>
+</html>
