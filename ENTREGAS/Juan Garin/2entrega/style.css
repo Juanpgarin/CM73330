@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+}
+
+body{
+    font-family: 'Cinzel';
+    line-height: 1.6;
+    background-image: url(pictures/fondo-umbra.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    background-attachment: fixed;
+    min-height: 100%; 
+}
+.navbar .logo{
+    max-width: 100px;
+    width: 100%S;
+}
+
+.navbar{
+    background: linear-gradient(to right, black,rgb(44, 41, 41));    
+}
+
+.navbar-nav{
+    margin: 0 auto;
+    gap:1rem;
+
+}
+
+.navbar .nav-link{
+    display: flex;
+    color: aliceblue;
+    font-size: x-large;
+    font-weight: bold;
+}
+.navbar .nav-link:hover{
+    color: red;
+    transition: color 0.4s ease;
+}
+.navbar-toggler{
+    border-color: aliceblue;
+    background-color: transparent;
+}
+
+/* Con ayuda de chat gpt */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='aliceblue' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}   
+/* Con ayuda de chat gpt */
+
+
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    background:linear-gradient(to left, black, rgb(44,41,41));
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;     
+    color: aliceblue; 
+    flex-wrap: wrap;
+    text-align: center;  
+}
+
+.foot-text{    
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    color: aliceblue;    
+}
+.icon {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+.foot-right{
+    text-align: end;
+}
+
