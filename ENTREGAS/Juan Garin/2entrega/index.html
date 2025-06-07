@@ -1,19 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UMBRA</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-
+    <head>
+        <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UMBRA</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
 <body>
     <header class="cabeza">
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="navbar-brand" href="./index.html"><img src="./pictures/logos/logo-sin-fondo.png"
                         alt="mano con forma de calavera con la palabra UMBRA" class="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -43,35 +42,76 @@
         </nav>
     </header>
     <main class="main-home">
+        <h1>NOVEDADES</h1>
         <section class="novedades">
-            <div class="novedad">ACA VA UNA IMAGEN</div>
-            <div class="novedad"> ACA VA LA OFERTA DEL LIBRO FUTURA TIENDA</div>
-        </section>
-        <section class="main-publicidad">
-            <aside class="publicidad">
-                <div class="banner1">
-                <img src="./pictures/otros/banner-jara.png" alt="">
-                </div>                
-            </aside>
-            <article class="relato-nuevo">
-                <h2>ULTIMO RELATO</h2>
-                <img src="./pictures/personajes/Jordanrage.png" alt="">
-                <p class="text-rnuevo">Acá va el resumen del relato</p>
-            </article>
-        </section>
-        <section class="relato-mes">
-            <div class="relatodestacado">
-                <div class="relato-text">
-                <h2>NOMBRE DEL RELATO</h2>
-                </div>
-                <div class="classimgrelato">
-                <img src="" alt="">
-                <h3 class="imgtext"></h3>
-                </div>
+            <div class="novedad1">
+                <img src="./pictures/otros/portada-letum.png" alt="" class="novedad-img">
+            </div>
+            <div class="novedad2">
+                <p>Acá va el resumen del relato</p>
             </div>
         </section>
+
+        <h2>ULTIMO RELATO</h2>
+        <section class="nuevorelato">
+            <div class="nrelato">
+                <img src="./pictures/otros/portada-aura.png"
+                    alt="Perra de raza Dogo argentino, sentada sobre el techo de una ambulancia abandonada en un entorno postapocaliptico. 
+                        Tiene una venda en los ojos, al costado una mochila y una fotografia. En el fondo figuras humanas zombificadas se mueven entre la niebla. "
+                    class="novedad-img">
+            </div>
+            <div class="nrelato1">
+                <h2>AURA</h2>
+                <h3>Lo único que no se devora</h3>
+                <p>Cuando el mundo se vino abajo, no quedaron muchas cosas por las que seguir luchando. Encerrados en su casa
+                    asediada por el horror, Tadeo, Carola y su perra Aura enfrentan situaciones de miedo y desesperación.
+                    La verdadera amenaza no siempre viene de la oscuridad.
+                    A veces, lo más peligroso está muy adentro de nuestro ser, disfrazado de lo que creemos seguro.
+                    En este relato angustiante y visceral, la lealtad adopta forma de cuatro patas, y la única esperanza que
+                    sobrevive no es la humana.
+                    Porque cuando todo se devora, <strong>solo el amor permanece</strong>
+                </p>
+            </div>
+            </div>
+            <button class="botonhome">Leer más></button>
+            </div>
+        
+        </section>
+        <h2>RELATO DEL MES</h2>
+
+
+        <div class="container-relatomes">            
+                <div class="contenido-relatomes">
+                    <div class="resumen-relatomes">
+                        <h2>REGRESIÓN</h2>
+                        <p>Un hombre comienza a perder el límite entre el sueño y la vigilia. 
+                           Lo persiguen sus pesadillas, mientras él sufre, confundido y hambriento.
+                           La vida cotidiana se vuelve cada vez más irreall, los recuerdos se mezclan 
+                           con visiones oscuras y violentas.
+                           Lo que alguna vez fue su vida ahora es apenas un eco, victima de la realidad
+                           que lo consume. </p>
+                    </div>
+                    <div class="img-relatomes">
+                        <img src="./pictures/otros/regresion.png" alt="">
+                    </div>                    
+                </div>
+                <button class="botonhome">Leer más></button>
+        </div>       
+
+            
+
+
+
+
         <section class="bannerpublicitario">
-            <a href=""><img src="" alt="">DOGTA</a>
+           
+                <a href="https://www.instagram.com/jara.pas/" target="_blank">
+                    <img src="./pictures/otros/banner-jara.png" alt="">
+                </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="./pictures/otros/banner-dogta.png" alt="">
+            </a>
+            
         </section>
 
     </main>
@@ -79,28 +119,28 @@
 
 
 
-    <footer class="footer">
-        <div class="foot-left">
-            <a href="https://www.instagram.com/umbra.escritos/" target="_blank">
-                <img src="pictures/logos/logoig.png" alt="logo de instagram - enlace al perfil de umbra" class="icon">
-            </a>
-            <a href="https://umbraescritos.blogspot.com/" target="_blank">
-                <img src="pictures/logos/blogspot.png" alt="logo de blogspot - Acceso al perfil de umbra" class="icon">
-            </a>            
-             <a href="mailto:umbra.escritos@gmail.com">
-                <img src="pictures/logos/Logo-umbra.png" alt="logo de umbra - mano con forma de calavera y texto umbra" class="icon">
-            </a>
-        </div>
-        
-        <div class="foot-right">
-            <p class="foot-text">& UMBRA - 2025 Todos los derechos Reservados</p>           
-        </div>
+        <footer class="footer">
+            <div class="foot-left">
+                <a href="https://www.instagram.com/umbra.escritos/" target="_blank">
+                    <img src="pictures/logos/logoig.png" alt="logo de instagram - enlace al perfil de umbra" class="icon">
+                </a>
+                <a href="https://umbraescritos.blogspot.com/" target="_blank">
+                    <img src="pictures/logos/blogspot.png" alt="logo de blogspot - Acceso al perfil de umbra" class="icon">
+                </a>            
+                <a href="mailto:umbra.escritos@gmail.com">
+                    <img src="pictures/logos/Logo-umbra.png" alt="logo de umbra - mano con forma de calavera y texto umbra" class="icon">
+                </a>
+            </div>
+            
+            <div class="foot-right">
+                <p class="foot-text">& UMBRA - 2025 Todos los derechos Reservados</p>           
+            </div>
 
-    </footer>
+        </footer>
 
 
 
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>  
-</body>
-</html>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>  
+    </body>
+    </html>

@@ -1,12 +1,16 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+
 
 html, body{
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;    
 }
 
 main{
@@ -21,21 +25,29 @@ body{
     background-position: center;
     background-repeat: no-repeat;  
     background-attachment: fixed;
-    min-height: 100%; 
+    min-height: 100%;     
+}
+.navbar, footer{
+    width: 100%;
 }
 .navbar .logo{
     max-width: 100px;
-    width: 100%S;
+    width: 100%;    
 }
 
-.navbar{
-    background: linear-gradient(to right, black,rgb(44, 41, 41));    
+.navbar{    
+    background: linear-gradient(to right, black,rgb(44, 41, 41));       
+}
+
+.navbar .container{
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
 }
 
 .navbar-nav{
     margin: 0 auto;
     gap:1rem;
-
 }
 
 .navbar .nav-link{
@@ -61,13 +73,34 @@ body{
 .main-home {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
     padding: 40px 20px;
     max-width: 1200px;
     margin: auto;
 }
+.main-home h1{
+    background-color: rgb(53, 52, 52);
+    text-align: center;
+    color: aliceblue;
+    font-size: 2rem;
+    border: solid rgb(26, 22, 22);
+    border-radius: 50px 0 50px 0;
+    font-weight: bold;
+    padding: 4px 0 0 0;
+}
 
-.novedades {
+.main-home h2{
+    background-color: rgb(53, 52, 52);
+    text-align: center;
+    color: aliceblue;
+    font-size: 2rem;
+    border: solid rgb(26, 22, 22);
+    border-radius: 50px 0 50px 0;
+    font-weight: bold;
+    padding: 4px 0 0 0;
+}
+
+.novedades{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -75,73 +108,185 @@ body{
     color: aliceblue;
 }
 
-.main-publicidad {
-    display: grid;
-    grid-template-columns: 2fr 4fr;
-    gap: 10px;
-    align-items: start;
-    
-}
-
-.publicidad {
-    padding: 15px;
+.novedad1{
     background-color: rgb(53, 52, 52);
-    margin: 70px 50px 0 0;        
-    height: 80%;
-    border-radius: 10px;
-    text-align: center;
-    color: aliceblue;   
+    padding: 15px;
+    border: solid rgb(26, 22, 22);
+    border-radius: 50px 0 0 50px;    
 }
 
-.publicidad img{
-    width: 100%;    
-    height: 40%;
-    border-radius: 8px;   
-    
+.novedad2{
+    background-color: rgb(53, 52, 52);
+    padding: 15px;
+    border-radius: 0 50px 50px 0;
+    border: solid rgb(26, 22, 22);
 }
 
-.relato-nuevo{
-    background: linear-gradient(bottom to left, black,rgb(44, 41, 41));
-    padding: 20px;
-    border-radius: 10px;
+.novedad-img{
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 30px 0 0 30px;
+    border: solid rgb(26, 22, 22);
+    border-width: 0.1rem;
+    object-fit: cover;    
+}
+
+.botonhomenov{
+    display: block;   
+    width: 100%;
+    padding: 12px 0;
+    background-color: rgb(26, 22, 22);
+    color: aliceblue;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 0 0 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;    
+}
+
+.nuevorelato{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
     text-align: center;
     color: aliceblue;
 }
 
-.relato-nuevo img{
-    width: 70%;
-    height: 500px;
-    border-radius: 8px;
-    margin-top: 0;
+.nrelato{
+    background-color: rgb(53, 52, 52);
+    padding: 15px;
+    border: solid rgb(26, 22, 22);
+    border-radius: 50px 0 0 50px;    
 }
 
-.relato-mes {
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    gap: 20px;
-    color: white;
-}
-.relato-mes h2{
-    text-align: center;
-}
-
-.relato-mes .relato{
-    background-color: rgba (255,255,255,0,05);
+.nrelato1{
+    background-color: rgb(53, 52, 52);
     padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+    border-radius: 0 50px 50px 0;
+    border: solid rgb(26, 22, 22);
+}
+.nrelato1 h2{
+    background-color: rgb(26, 22, 22);
 }
 
-.relato-mes img{
+
+.novedad-img{
+    display: block;
     width: 100%;
-    border-radius: 8px;
-    margin-top: 10px;
+    max-width: 600px;
+    height: auto;
+    border-radius: 30px 0 0 30px;
+    border: solid rgb(26, 22, 22);
+    border-width: 0.1rem;
+    object-fit: cover;    
 }
 
+.botonhomenov{
+    display: block;   
+    width: 100%;
+    padding: 12px 0;
+    background-color: rgb(26, 22, 22);
+    color: aliceblue;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 0 0 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;    
+}
 
+.container-relatomes{
+    background-color: rgb(53, 52, 52);
+    width: 100%;
+    padding: 20px;
+    border: solid rgb(26, 22, 22);
+    border-radius: 30px 30px 30px 30px;
+    box-sizing: border-box;
+}
 
+.contenido-relatomes{
+    display: flex;
+    justify-content: space-between;
+    gap:20px;        
+}
 
+.resumen-relatomes{
+    flex: 1;
+    font-size: 1rem;
+    color:aliceblue;    
+}
+.resumen-relatomes h2{
+    background-color: rgb(26, 22, 22);
+}
 
+.resumen-relatomes p{
+    text-align: center;
+    padding: 15px;
+    font-size: large;
+    
+}
+
+.img-relatomes{
+    flex-shrink: 0;
+    width: 300px;
+    height: auto;    
+}
+
+.img-relatomes img{
+    width: 100%;
+    height: auto;
+    border-radius: 0 10px 0 10px;
+    object-fit: cover;    
+}
+
+.botonhome {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    background-color: rgb(26, 22, 22);
+    color: aliceblue;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none ;
+    border-radius: 0 0 30px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.botonhome:hover{
+    border: solid,aliceblue;
+    color: red;   
+}
+
+.bannerpublicitario{
+    background-color:  rgb(53, 52, 52);    
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: solid rgb(26, 22, 22);
+    border-radius: 30px;
+    gap:20px;
+    align-items: center;    
+}
+
+.bannerpublicitario img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    border: 4px solid, rgb(26, 22, 22);
+    transition: trasnform 0.3s ease;
+}
+
+.bannerpublicitario a img:hover{
+    border: 4px solid, aliceblue;
+    transform: scale(1.05);
+}
 
 footer{
     display: flex;
@@ -164,7 +309,13 @@ footer{
     width: 100px;
     height: auto;
     cursor: pointer;
+    transition: transform 0.3s ease;    
 }
+
+.icon:hover{
+    transform: scale(1.09);
+}
+    
 
 .foot-right{
     text-align: end;
@@ -223,13 +374,66 @@ footer{
 
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
-  .novedades,
-  .relato-mes {
-    grid-template-columns: 1fr;
+
+@media(max-width:768px) {
+    .contenido-relatomes{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .img-relatomes{
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .resumen-relatomes{
+        width: 100%;
+        text-align: center;
+    }
+
+    .botonhome{
+        width: 100%;
+    }
+
+    .nuevorelato{
+        grid-template-columns: 1fr;
+    }
+    .nrelato, .nrelato1 {
+        border-radius: 30px;
+    }
+    .novedad-img{
+        border-radius: 30px;
+    }
+    .botonhomenov{
+        border-radius: 0 0 30px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+  .novedad-img {
+    max-width: 100%;
+    height: auto;
+  }
+  h1, h2{
+    font-size: 1rem;
   }
 
-  .publicidad-relato {
-    grid-template-columns: 1fr;
+  .novedades {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .novedad1,
+  .novedad2 {
+    border-radius: 30px;
   }
 }
+
+@media (max-width: 300) {
+    h1, h2{
+    font-size: 1rem;
+  }
+}
+
